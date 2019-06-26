@@ -25,5 +25,9 @@
   },
   "homepage": "https://github.com/FatihZeytin/Sigorta#readme",
   "main": "gulpfile.js",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
+    "bootstrap-less-port": "^1.0.0"
+  }
 }

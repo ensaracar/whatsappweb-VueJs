@@ -20,7 +20,7 @@ SRC_DIR.less = SRC_DIR.root + 'less/';
 SRC_DIR.pug = SRC_DIR.root + 'pug/';
 
 // Source file matchers, using respective directories
-const SRC_FILES = { 
+const SRC_FILES = {
 	less: SRC_DIR.less + '*.less',
 	pugTemplates: SRC_DIR.pug + 'templates/*.pug',
 	pug: SRC_DIR.pug + '**/*.pug',
@@ -51,18 +51,18 @@ gulp.task('watch', () => {
 
 gulp.task('jsmin', () =>
 	gulp.src(SRC_FILES.js)
-    .pipe(uglify())
-	.pipe(gulp.dest(PUB_DIR.js))
-	.pipe(connect.reload())
+		.pipe(uglify())
+		.pipe(gulp.dest(PUB_DIR.js))
+		.pipe(connect.reload())
 );
 
 gulp.task('less', () =>
 	gulp.src(SRC_FILES.less)
 		.pipe(less().on('error', err => console.log(err)))
 		.pipe(gulp.dest(PUB_DIR.css))
-        .pipe(cssmin())
-        .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest(PUB_DIR.css))
+		.pipe(cssmin())
+		.pipe(rename({suffix: '.min'}))
+		.pipe(gulp.dest(PUB_DIR.css))
 		.pipe(connect.reload())
 		.pipe(connect.reload())
 );
@@ -70,7 +70,7 @@ gulp.task('less', () =>
 gulp.task('pug', () =>
 	gulp.src(SRC_FILES.pug)
 		.pipe(pug({
-			// pretty: true // Comment this to get minified HTML
+			pretty: true // Comment this to get minified HTML
 		}))
 		.pipe(gulp.dest(file => {
 			var pugIndex = file.base.lastIndexOf('pug');
@@ -81,21 +81,21 @@ gulp.task('pug', () =>
 );
 
 gulp.task('imagemin', () =>
-    gulp.src(SRC_FILES.images)
-        .pipe(imagemin())
-        .pipe(gulp.dest(PUB_DIR.img))
+	gulp.src(SRC_FILES.images)
+		.pipe(imagemin())
+		.pipe(gulp.dest(PUB_DIR.img))
 		.pipe(connect.reload())
 );
 
 gulp.task('copyAssets', () =>
-    gulp.src(SRC_FILES.assets)
-        .pipe(gulp.dest(PUB_DIR.root))
+	gulp.src(SRC_FILES.assets)
+		.pipe(gulp.dest(PUB_DIR.root))
 		.pipe(connect.reload())
 );
 
 gulp.task('webserver', () =>
 	connect.server({
-    	root: 'public',
+		root: 'public',
 		livereload: true,
 		port: 80,
 		host: 'localhost'
