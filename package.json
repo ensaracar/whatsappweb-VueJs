@@ -1,17 +1,9 @@
 {
-  "name": "sigorta",
+  "name": "project",
   "version": "1.0.0",
   "keywords": [],
   "license": "MIT",
   "author": "Ensar Acar <ensaracar002@gmail.com> (http://www.ensaracar.com)",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/FatihZeytin/Sigorta.git"
-  },
-  "bugs": {
-    "url": "https://github.com/FatihZeytin/Sigorta.git/issues",
-    "email": "ensaracar002@gmail.com"
-  },
   "scripts": {},
   "devDependencies": {
     "gulp": "^3.9.1",
@@ -23,7 +15,6 @@
     "gulp-rename": "~1.2",
     "gulp-uglify": "~2.1"
   },
-  "homepage": "https://github.com/FatihZeytin/Sigorta#readme",
   "main": "gulpfile.js",
   "description": "",
   "dependencies": {
