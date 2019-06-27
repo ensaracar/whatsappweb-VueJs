@@ -1,0 +1,46 @@
+{
+  "whatsapp_messages": [
+    {
+      "handle": "0123456789@s.whatsapp.net",
+      "attachments": [],
+      "text": "Hi, it's me.",
+      "date": "2016-06-17 15:29:53.573508",
+      "from_me": true,
+      "arrow": true,
+      "contact": null,
+      "conversation_id": 3,
+      "group_handles": null,
+      "id": 6
+    },
+    {
+      "handle": "0123456789@s.whatsapp.net",
+      "attachments": [],
+      "text": "Hey there!",
+      "date": "2016-07-15 11:43:25.035354",
+      "from_me": false,
+      "arrow": true,
+      "contact": {
+        "phone": "+0123456789",
+        "contact_id": 13002
+      },
+      "conversation_id": 4,
+      "group_handles": null,
+      "id": 13
+    },
+    {
+      "handle": "0123456789@s.whatsapp.net",
+      "attachments": [],
+      "text": "Ok",
+      "date": "2016-07-15 11:43:25.422725",
+      "from_me": true,
+      "arrow": true,
+      "contact": {
+        "phone": "+0123456789",
+        "contact_id": 13002
+      },
+      "conversation_id": 4,
+      "group_handles": null,
+      "id": 14
+    }
+  ]
+}
