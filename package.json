@@ -6,7 +6,7 @@
   "author": "Ensar Acar <ensaracar002@gmail.com> (http://www.ensaracar.com)",
   "scripts": {},
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-connect": "^5.7.0",
     "gulp-cssmin": "^0.2.0",
     "gulp-imagemin": "~3.2",
